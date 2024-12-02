@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{ product.product }}</h2>
+<p>價格：${{ product.price }}</p>
+<p>描述：{{ product.content }}</p>
+<a href="{{ url_for('index') }}">回到首頁</a>
+{% endblock %}
